@@ -1,0 +1,141 @@
+@font-face {
+    font-family: Alkatra;
+    src: url(a_Alkatra.ttf);
+}
+@font-face {
+    font-family: Rubik Maps;
+    src: url(a_RubikMaps.ttf);
+}
+@font-face {
+    font-family: Alkatra;
+    src: url(a_Roboto.ttf);
+}
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    padding:30px;
+    text-align:center;
+    background-color:#b45b90;
+}
+h1{
+    font-size:3.5rem;
+    font-family:Alkatra;
+    color: #F9B4ED;
+}
+h2{
+    color: #4d1145;
+}
+.container{
+    height:70vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.game{
+    height:60vh;
+    width:60vh;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:0.7vh;
+    align-items:center;
+}
+.btn{
+    height:18vh;
+    width:18vh;
+    border-radius:15px;
+    border:none;
+    background-color:#334139;
+    color:#E574BC;
+    font-size:50px;
+    font-family: Rubik Maps;
+}
+.btn:hover{
+    box-shadow: 10px 10px 16px rgba(0,0,0,0.8);
+    cursor:pointer;
+}
+.btn:active{
+    background-color:#b2bdb2;
+}
+.reset-button{
+    padding-top:1rem;
+    padding-bottom:1rem;
+    border-radius:15px;
+    border:none;
+    width:7.5rem;
+    background-color:#334139;
+    color:#E574BC;
+    font-size:20px;
+    font-family: Roboto;
+}
+.reset-button:hover{
+    cursor:pointer;
+    box-shadow: 6px 6px 16px rgba(0,0,0,0.2);
+}
+.hide{
+    display:none;
+}
+.main-display-winner{
+    margin-top:1rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.display-winner{
+    padding:0.5rem;
+    border:2px solid #334139;
+    width:18rem;
+    border-radius:10px;
+}
+.msg{
+    font-size:2.4rem;
+    margin:0.2rem;
+    font-family: Lobster;
+    color:#334139;
+}
+.new-game{
+    padding-top:1rem;
+    padding-bottom:1rem;
+    border-radius:15px;
+    border:none;
+    width:7.5rem;
+    background-color:#334139;
+    color:#E574BC;
+    font-size:20px;
+    font-family: Roboto;
+}
+.new-game:hover{
+    cursor:pointer;
+    box-shadow: 6px 6px 16px rgba(0,0,0,0.2);
+}
+@media (max-width: 630px){
+    .game{
+        width:50vh;
+    }
+    .btn{
+        width:12.4vh;
+    }
+}
+@media (max-width: 412px){
+    .game{
+        width:35vh;
+    }
+    .btn{
+        width:11.2vh;
+    }
+}
+@media (max-width: 285px){
+    .game{
+        width:34vh;
+    }
+    .btn{
+        width:10.5vh;
+    }
+    h1{
+        font-size:2rem;
+    }
+
+}
+
